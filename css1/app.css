@@ -1,0 +1,17 @@
+h1 {
+	color: red;
+}
+
+h4 {
+	background: red;
+	color: purple;
+}
+
+li {
+	color: green;
+}
+
+body {
+	background: url(http://placehold.it/340x340?text=TEST) no-repeat;
+	background-size:cover;
+}
