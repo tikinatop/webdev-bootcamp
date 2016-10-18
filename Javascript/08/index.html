@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>More Exercise functions</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var isEven = function(foo) {
+			return foo % 2 === 0;
+		}
+
+		var factorial = function(bar) {
+			return (bar == 1) ? 1 : bar * factorial(bar-1);
+		}
+
+		var kebabToSnake = function(string) {
+			if (!typeof string == "string") {
+				console.error("Type is not a string!");
+			} else {
+				return string.replace(/-/g,"_");
+			}
+		}
+	</script>
+</body>
+</html>

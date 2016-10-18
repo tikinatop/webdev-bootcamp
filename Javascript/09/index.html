@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Intro to JS Scope</title>
+</head>
+<body>
+	Scope is the <strong>context</strong> that code is executed in.
+	<script type="text/javascript">
+		var num = 9;
+		var doMath = function(){
+			++num;
+			return num%5 === 0;
+		}
+		console.log("first attempt : ",doMath());
+		num+=1;
+		console.log("second attempt : ",doMath());
+	</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Conditions Exercises</title>
+</head>
+<body>
+<h1>Age Checking</h1>
+	<script type="text/javascript">
+		var myAge=prompt("Enter your age please : ");
+		if (myAge < 0) {
+			console.log("There's an error!");
+		}
+		myAge % 2 == 1 ? console.log("Your age is odd! ") : console.log("Your age is even!");
+		if (myAge/Math.sqrt(myAge) == Math.round(Math.sqrt(myAge))) { console.log("Perfect square !");} 
+	</script>
+<h2>Simple Guessing Game</h2>
+<script type="text/javascript">
+
+	do {
+		var myNumber = prompt("Enter a number between 1 and 10!");
+	} while (myNumber < 0 || myNumber > 10);
+	var numberToFind = Math.round(Math.random()*10);
+	if (myNumber > numberToFind) {
+		console.log("Lower!");
+	} else 
+	if (myNumber < numberToFind) {
+		console.log("Higher!");
+	} else
+	if (myNumber == numberToFind) {
+		console.log("You guessed right!");
+	} else {console.error("Error that is supposed to not happen! NaN")}
+	console.log(numberToFind);
+
+</script>
+</body>
+</html>

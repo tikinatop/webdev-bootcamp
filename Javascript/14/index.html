@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Array problems set</title>
+</head>
+<body>
+	<h1>Array Problem Set Solution</h1>
+	<p>Open up the console!</p>
+	<script type="text/javascript">
+
+		var printReverse = function(arr) {
+			for(var i=arr.length-1;i>=0;i--) {
+				console.log(arr[i]);
+			}
+		};
+
+		printReverse([3,6,2,5]);
+
+		/////////////////
+		// IsUniform() //
+		/////////////////
+
+		var isUniform = function(arr) {
+			var first = arr[0];
+			for(var i =1;i<arr.length;i++) {
+				if (arr[i] !== first) {
+					return false;
+				}
+			}
+			return true;
+		};
+		
+		////////////////////
+		// False solution //
+		////////////////////
+
+		// var isUniform = function(arr){
+		// 	var first = arr[0];
+		// 	arr.forEach(function(element){
+		// 		if(element !== first){
+		// 			return false;
+		// 		}
+		// 	});
+		// 	return true;
+		// }
+		
+		////////////////
+		// sumArray() //
+		////////////////
+
+		var sumArray = function(arr) {
+			var total = 0;
+			arr.forEach(function(element){
+				total+=element;
+			});
+			return total;
+		}
+
+		///////////////////
+		// *** max() *** //
+		///////////////////
+
+		var max = function(arr){
+			var max = arr[0];
+			arr.forEach(function(placeholder){
+				if(placeholder > max){
+					max = placeholder;
+				}
+			})
+				return max;
+		}
+
+		/////////////////////////////
+		// *** BONUS : forEach *** //
+		/////////////////////////////
+		
+		var myForEach = function(arr,func) {
+			for (var i = 0;i<arr.length;i++){
+				func(arr[i]);
+			}
+		}
+		//Use :  myForEach(table,console.log);
+		//myForEach(table,function(){alert("HI")}); -> alerts "HI" index times
+		//myForEach(table,function(placeholder){alert(placeholder)}); -> alerts the content of the table
+
+		Array.prototype.myForEach = function(func){
+			for (var i = 0;i<this.length;i++){
+				func(this[i]);
+			}
+		}
+		// table.myForEach(alert) -> shortcut
+	</script>
+</body>
+</html>

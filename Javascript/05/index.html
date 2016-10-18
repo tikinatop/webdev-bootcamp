@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Annoy-o-matic</title>
+</head>
+<body>
+	<h1>Annoy-o-matic</h1>
+<!-- 	<script type="text/javascript">
+		do {
+			var answer = prompt("Are we there yet??");
+			answer = answer.toUpperCase();
+		} while (answer != "YEAH" || answer != "YES");
+	</script> -->
+	<script>
+		var answer = prompt("Are we there yet?");
+
+		while(answer.indexOf("yes") == -1) {
+			var answer = prompt("Are we there yet?");
+		}
+		alert("We made it brahs!");
+	</script>
+	<h1>Okay Good!</h1>
+</body>
+</html>

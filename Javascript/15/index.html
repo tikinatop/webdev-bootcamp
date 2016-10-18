@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Objects Exercises</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		////////////////////////
+		// *** EXERCISE 1 *** //
+		////////////////////////
+
+	var someObject = {};
+
+	// Which of the following are valid:
+	
+	someObject._name="Hedwig"; //true
+	someObject.age = 6; //true
+
+	var prop = "color";
+	someObject[prop] = "red"; //true someObject["color"]
+	//someObject.123= true; //nope
+
+
+	////////////////////////
+	// *** EXERCISE 2 *** //
+	////////////////////////
+
+	var someObject = {
+		friends: [
+		{name: "Malfoy"},
+		{name: "Goyle"},
+		{name: "Crabble"}
+		],
+		color: "baby blue",
+		isEvil: true
+	};
+
+	// Write code to retrive  "Malfoy" from someObject
+	// Go one "layer" at a time!
+	// Open up the console
+	
+	console.log(someObject.friends[0].name);
+
+
+
+
+	</script>
+</body>
+</html>

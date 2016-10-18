@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>While Loops</title>
+</head>
+<body>
+	<h1>While Loops Problem Set</h1>
+	<ol>
+		<li>Print all numbers between -10 and 19</li>
+		<li>Print all even numbers between 10 and 40</li>
+		<li>Print all odd numbers between 300 and 333</li>
+		<li>Print all  numbers divisible by 5 AND 3 between 5 and 50</li>
+	</ol>
+	<script type="text/javascript">
+		//Print all numbers between -10 and 19
+var i = -10;
+		while (i<20){
+			console.log(i);
+			i++;
+		}
+
+
+		//Print all even numbers between 10 and 40
+		i=10;
+		while(i<41){
+			if (i%2 == 0) {
+				console.log(i);
+			}
+			i++;
+		}
+
+
+		//Print all odd numbers between 300 and 333
+		i=300;
+		while(i<334){
+			if (i%2 != 0) {
+				console.log(i);
+			}
+			i++;
+		}
+
+
+		//Print all  numbers divisible by 5 AND 3 between 5 and 50
+		i=5;
+		while(i<51){
+			if (i%3 == 0 && i%5 == 0) {
+				console.log(i);
+			}
+			i++;
+		}
+
+
+	</script>
+</body>
+</html>

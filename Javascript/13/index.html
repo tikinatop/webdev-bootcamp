@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Array Quiz</title>
+</head>
+<body>
+	<h1>Todo List v2</h1>
+	<ul>
+		<li>"new" - Add A Todo</li>
+		<li>"list" - View All Todos</li>
+		<li>"delete" - View All Todos</li>
+		<li>"quit" - Quit App</li>
+	</ul>
+	<script type="text/javascript">
+		var todos = [];
+		var input = prompt("What would you like to do?");
+
+
+
+		while (input !== "quit") {
+			if (input === "list") {
+				console.log("************");
+				todos.forEach(function(todo, i){
+					console.log(i+1 ,": ",todo);
+				});
+				console.log("************");
+			} else
+			 if (input === "new") {
+				// ask for a new todo
+				var newTodo = prompt("Enter new todo");
+				//add to todos array
+				todos.push(newTodo);
+			} else
+			 if (input === "delete") {
+			 	// ask for index of todo to be deleted
+			 	var index = prompt("Enter entry of todo to be deleted");
+			 	// delete that todo
+			 	todos.splice(index-1,1);
+			 }
+			// ask again for new inputs
+			var input = prompt("What would you like to do?");
+		}
+		console.log("You quit the app")
+	</script>
+</body>
+</html>

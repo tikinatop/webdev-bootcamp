@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Methods</title>
+</head>
+<body>
+	Topics: 
+
+	<ul>
+		<li>Adding methods to an object</li>
+		<li>Namespacing</li>
+		<li>The Keyword <em>this</em></li>
+	</ul>
+
+	<script type="text/javascript">
+
+
+		var dogSpace = {
+			speak: function(){
+				return "WOOF!";
+			}
+		};
+
+		var catSpace = {
+			speak: function(){
+				return "MEOW!";
+			}
+		};
+
+		var comments = {
+			data: ["Good Job!","Bye","Lame..."],
+			print: function(){
+				this.data.forEach(function(placeholder){
+					console.log(placeholder);
+				});
+			} 
+		}
+
+		comments.data.push("Wew!");
+		comments.print();
+	</script>
+
+</body>
+</html>

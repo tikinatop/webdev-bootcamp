@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Higher Order Functions</title>
+</head>
+<body>
+	We can pass functions to other functions too.
+	<script type="text/javascript">
+		var sing = function() {
+			console.log("twinkle twinkle");
+			console.log("how I wonder...");
+		}
+
+		setInterval(sing,2000);
+
+		setInterval(function(){
+			console.log("I am anonymous function inside setInterval");
+		},3000);
+	</script>
+</body>
+</html>
